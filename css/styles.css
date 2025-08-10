@@ -1,0 +1,99 @@
+body {
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    padding-top: 20px;
+}
+
+/* Header styling */
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1f1f1f;
+    color: #aaaaaa;
+    margin-top: 40px;
+}
+
+/* Center the row container’s children */
+.row {
+    text-align: center;  /* Center inline-block children */
+    margin-left: 0;      /* Remove Bootstrap’s default side margins */
+    margin-right: 0;
+}
+
+/* Boxes styling */
+.box,
+.box2,
+.box3 {
+    display: inline-block;  /* Make boxes inline-block for horizontal alignment */
+    vertical-align: top;    /* Align boxes to top */
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    min-height: 250px;
+    text-align: center;
+    margin: 10px;          /* Space around boxes */
+    width: 300px;          /* Fixed width for equal sizing */
+}
+
+/* Specific background colors */
+.box {
+    background-color: #2a9d8f; /* teal */
+}
+
+.box2 {
+    background-color: #e76f51; /* coral */
+}
+
+.box3 {
+    background-color: #264653; /* blue-gray */
+}
+
+/* Padding inside inputs and buttons in weather section */
+.padding-bottom-small {
+    padding-bottom: 8px;
+}
+
+/* Image styling */
+.user-image {
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Inputs styling */
+input[type="text"] {
+    width: 80%;
+    max-width: 250px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px; /* vertical spacing between inputs */
+}
+
+/* Buttons styling */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #444;
+    color: #fff;
+}
