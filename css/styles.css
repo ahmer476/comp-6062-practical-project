@@ -1,101 +1,49 @@
+/* General styling */
 body {
-    background-color: #0d1117; /* dark navy */
+    background: linear-gradient(135deg, #f4f7f9, #dce3e8);
+    color: #222;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #e6edf3; /* light gray */
-    padding-top: 20px;
 }
 
-/* Header styling */
-header h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #ffffff;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #161b22; /* deep navy */
-    color: #8b949e; /* muted gray */
-    margin-top: 40px;
-}
-
-/* Center the row container’s children */
-.row {
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* Boxes styling */
-.box,
-.box2,
-.box3 {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #1e1e1e;
+/* Section boxes */
+.box, .box2, .box3 {
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    min-height: 250px;
-    text-align: center;
-    margin: 10px;
-    width: 300px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Specific background colors */
+/* Individual box colors */
 .box {
-    background-color: #3b82f6; /* bright blue */
+    background-color: #4a90e2; /* Blue */
 }
 
 .box2 {
-    background-color: #f59e0b; /* amber */
+    background-color: #50b87f; /* Green */
 }
 
 .box3 {
-    background-color: #10b981; /* emerald green */
+    background-color: #f5a623; /* Orange */
 }
 
-/* Padding inside inputs and buttons in weather section */
-.padding-bottom-small {
-    padding-bottom: 8px;
-}
-
-/* Image styling */
+/* User image responsive */
 .user-image {
-    display: block;
-    margin: 0 auto 15px auto;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Inputs styling */
-input[type="text"] {
-    width: 80%;
-    max-width: 250px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
+/* Tablet and smaller adjustments */
+@media (max-width: 991px) {
+    .box, .box2, .box3 {
+        text-align: center;
+        padding: 15px;
+    }
 }
 
-/* Buttons styling */
-button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #2563eb; /* primary blue */
-    color: white;
-}
-
-/* Button hover effect */
-button:hover {
-    background-color: #1d4ed8; /* darker blue */
-    color: #fff;
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
