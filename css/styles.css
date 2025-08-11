@@ -1,6 +1,6 @@
 /* General styling */
 body {
-    background: linear-gradient(135deg, #f4f7f9, #dce3e8);
+    background-color: skyblue;
     color: #222;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -34,7 +34,7 @@ body {
     border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Tablet and smaller adjustments */
+/* smaller adjustments */
 @media (max-width: 991px) {
     .box, .box2, .box3 {
         text-align: center;

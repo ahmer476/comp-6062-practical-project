@@ -10,7 +10,7 @@ createApp({
         };
     },
     methods: {
-        // Add your methods here, e.g.:
+        // Add method to fetch the data, e.g.:
         getWeather() {
 			const url = `https://comp6062.liamstewart.ca/weather-data?city=${this.city}&province=${this.province}&country=${this.country}`;
     
